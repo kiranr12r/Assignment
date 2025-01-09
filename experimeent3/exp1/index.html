@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item-content h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .item-content p {
+            color: #666;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .item-content .price {
+            font-size: 16px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .item-content button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .item-content button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Shopping Catalog</h1>
+    </header>
+    <div class="container">
+        <div class="catalog">
+            <!-- Item 1 -->
+            <div class="item">
+                <img src="https://via.placeholder.com/250x200" alt="Item 1">
+                <div class="item-content">
+                    <h3>Wireless Headphones</h3>
+                    <p>High-quality sound with noise cancellation.</p>
+                    <p class="price">$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item">
+                <img src="https://via.placeholder.com/250x200" alt="Item 2">
+                <div class="item-content">
+                    <h3>Smart Watch</h3>
+                    <p>Track your fitness and stay connected.</p>
+                    <p class="price">$120.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item">
+                <img src="https://via.placeholder.com/250x200" alt="Item 3">
+                <div class="item-content">
+                    <h3>Gaming Mouse</h3>
+                    <p>Ergonomic design with customizable buttons.</p>
+                    <p class="price">$30.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="item">
+                <img src="https://via.placeholder.com/250x200" alt="Item 4">
+                <div class="item-content">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>Portable speaker with deep bass and clear sound.</p>
+                    <p class="price">$40.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Online Shopping. All rights reserved.</p>
+    </footer>
+</body>
+</html>
